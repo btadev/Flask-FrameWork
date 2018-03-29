@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <title>Thời Trang</title>
+    <link rel="shortcut icon" href="{{url_for('static', filename='asset/images/logo.ico')}}"/>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='asset/css/style.css')}}">
+    <link rel="stylesheet" href="{{url_for('static', filename='asset/css/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+    <link rel="stylesheet" type="text/css" href="{{url_for('static', filename='asset/css/bootstrap.min.css')}}">
+    <style type="text/css">
+        /*menu*/
+            #menu ul {
+              background: #1F568B;
+              list-style-type: none;
+              text-align: center;
+            }
+            #menu li {
+              color: #f1f1f1;
+              display: inline-block;
+              width: 120px;
+              height: 40px;
+              line-height: 40px;
+              margin-left: -5px;
+            }
+            #menu ul {
+              background: #1F568B;
+              list-style-type: none;
+              overflow: hidden;
+              width: 100%;
+            }
+            #menu a {
+              text-decoration: none;
+              color: #fff;
+              display: block;
+            }
+            #menu a:hover {
+              background: #F1F1F1;
+              color: #333;
+            }
+
+    </style>
+</head>
+
+<body>
+    
+    <div class="container">
+        <!--   menu -->
+           <div id="menu">
+              <ul>
+                <li><a href="/congnghe" target="_blank">Công Nghệ</a></li>
+                <li><a href="/phapluat" target="_blank">Pháp Luật</a></li>
+                <li><a href="/fashion" target="_blank">Thời Trang</a></li>
+                <li><a href="/sport" target="_blank">Thể Thao</a></li>
+                <li><a href="/newsbook" target="_blank">Tin Tức Về Sách</a></li>
+                <li><a href="http://facebook.com/cristian.haui" target="_blank">Cristian</a></li>
+              </ul>
+            </div>
+
+          <!--  content -->
+        <div class="block">
+
+            <div class="row">
+            	{% for key in fashion %}
+                <div class="col-md-6 col-sm-6 col-xs-6 col-lg-3">
+
+             
+                    <div class="card img-thumbnail">
+                        <img class="card-img-top img-responsive" src="{{key['cover']}}" alt="Card image cap">
+                        <div class="card-block">
+                            <h4 class="card-title">{{key['title']}} </h4>
+                            <p class="card-text">{{key['summary']}}</p>
+                            <div class="text-center"><a href="{{key['link']}}" class="btn btn-success">Đọc tiếp</a></div>
+                        </div>
+                    </div>
+                   
+                </div>
+                 {% endfor %}
+                
+            </div>
+
+		</div>
+	</div>
+
+   <!--  footer -->
+    <div class="footer">
+        Bản quyền thuộc về news.zing.vn<br/>Mọi thông tin từ website này đều thuộc về news.zing.vn<br/><span id="copy">Copyright © 2018 news.zing.vn</span>
+        <p>phap luat <a href=""></a></p>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.3/umd/popper.min.js" integrity="sha384-vFJXuSJphROIrBnz7yo7oB41mKfc8JzQZiCq4NCceLEaO4IHwicKwpJf9c9IpFgh" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/js/bootstrap.min.js" integrity="sha384-alpBpkh1PFOepccYVYDB4do5UnbKysX5WZXm3XxPqe5iKTfUKjNkCk9SaVuEZflJ" crossorigin="anonymous"></script>
+</body>
+
+</html>

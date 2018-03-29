@@ -1,0 +1,110 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+/*het menu*/
+.card-title {
+    font-weight: bold;
+    text-align: center;
+    font-size: 25px;
+    margin-bottom: -0.25rem;
+}
+
+.card {
+    border: 10px;
+    margin-bottom: 5px;
+}
+
+
+/* .card-block {
+    background-color: rgb(216, 224, 226);
+} */
+
+body {
+    background-color: #e9ebee!important;
+    font-family: sans-serif;
+  color: #333;
+}
+
+label>a:hover {
+    text-decoration: none;
+}
+
+.text-center>.btn {
+    margin-bottom: 8px;
+}
+
+.btn-success {
+    background-color: #5f7db9!important;
+    border-color: #5f7db9!important;
+}
+
+.header .navbar {
+    font-weight: bold;
+    background-color: #e2e2e2!important;
+}
+
+
+/* .dropdown-menu>a {
+    font-weight: bold;
+} */
+
+.content-title {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+i.fa.fa-angle-right {
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+
+/* .dropdown:hover>.dropdown-menu {
+    display: block;
+} */
+
+.handler {
+    margin-top: 15px;
+}
+
+.card-text {
+    padding: 0px 10px;
+    text-overflow: clip;
+}
+
+.content-title>a:hover {
+    text-decoration: none;
+    color: black;
+}
+
+.content-title>a {
+    color: black;
+}
+
+.footer {
+    padding-top: 7px;
+    background-color: #e9ebee;
+    text-align: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+    margin-bottom: 0px;
+}
+
+.nav-link:focus {
+    background-color: #eaeaea;
+}
+
+#copy {
+    font-size: 0.75rem;
+}
+
+.carousel-inner img {
+    width: 100%;
+    height: 30em;
+}
+
+.nav-item {
+    font-size: 0.75rem;
+}
